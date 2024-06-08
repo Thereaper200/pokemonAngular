@@ -1,0 +1,48 @@
+<div class="pokedex-container">
+    <h1>{{pokemon.name}}</h1>
+
+    <div class="contenedor">
+        <p>El ID de {{pokemon.name}} es:</p>
+        <p class="pokemon-id">{{pokemon.id}}</p>
+    </div>
+
+    <div class="contenedor">
+        <p>El tipo de {{pokemon.name}} es:</p>
+        <p>{{pokemon.types[0].type.name}}</p>
+    </div>
+
+    <div class="contenedor">
+        <p>Sus estadísticas bases son:</p>
+        <p>{{pokemon.stats[0].stat.name}} - {{pokemon.stats[0].base_stat}}</p>
+        <p>{{pokemon.stats[1].stat.name}} - {{pokemon.stats[1].base_stat}}</p>
+        <p>{{pokemon.stats[2].stat.name}} - {{pokemon.stats[2].base_stat}}</p>
+    </div>
+
+    <div class="contenedor">
+        <p>Sus ataques más fuertes son:</p>
+        <p>{{pokemon.moves[0].move.name}}</p>
+        <p>{{pokemon.moves[1].move.name}}</p>
+        <p>{{pokemon.moves[2].move.name}}</p>
+        <p>{{pokemon.moves[3].move.name}}</p>
+        <p>{{pokemon.moves[4].move.name}}</p>
+    </div>
+
+    <div class="contenedor">
+        <p>El peso de {{pokemon.name}} es:</p>
+        <p>{{pokemon.weight}} kg</p>
+    </div>
+
+    <div class="contenedor">
+        <p>La altura de {{pokemon.name}} es:</p>
+        <p>{{pokemon.height}} m</p>
+    </div>
+
+    <div class="contenedor">
+        <p>Las habilidades de {{pokemon.name}} son:</p>
+        <p>{{pokemon.abilities[0].ability.name}}</p>
+        <p>{{pokemon.abilities[1].ability.name}}</p>
+    </div>
+
+
+    <img class="pokemonImage" src="{{pokemon.sprites.other.dream_world.front_default}}" alt="Foto">
+</div>
